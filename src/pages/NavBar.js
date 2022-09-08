@@ -5,11 +5,11 @@ function NavBar() {
   return (
     <div>
       <h3>e-library</h3>
-      <NavLink ></NavLink>
-      <NavLink></NavLink>
-      <NavLink></NavLink>
-      <NavLink></NavLink>
-      <NavLink></NavLink>
+      <NavLink to='/' >Home</NavLink>
+      <NavLink to='/books'>Books Available</NavLink>
+      <NavLink to='/customers'>Customers</NavLink>
+      <NavLink to='/purchases'>Purchases Made</NavLink>
+      <NavLink to='/about'>About</NavLink>
 
     </div>
   )
