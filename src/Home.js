@@ -12,7 +12,7 @@ function Home() {
             <span>e-library</span>
             <h2>Welcome to the beginning of your reading journey</h2>
             <p>Are you ready to experience a different world?</p>
-            <button id='enr'><a href='#' id='enrl'>EXPLORE BOOKS </a></button>
+            <button id='enr'><a href='#' id='enrl'>EXPLORE</a></button>
              <button id='ex'><a href='#' id='exp'>BUY NOW</a></button>
           </div>
         </div>
