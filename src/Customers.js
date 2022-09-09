@@ -19,11 +19,11 @@ function Customers({ custom }) {
         setCustomer(customer)
         console.log(customer)
       })
-    .catch(err => console.loh(err))
+    .catch(err => console.log(err))
   }
   return (
     <>
-      { `${custom?.name} ` }  <span style={{cursor: "pointer"}} onClick={deletePat}>🗑</span>
+      { `${custom?.name}` }  <span style={{cursor: "pointer"}} onClick={deleteCustomer}>🗑</span>
     </>
   )
 }

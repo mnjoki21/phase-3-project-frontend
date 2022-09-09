@@ -1,7 +1,8 @@
 import React from 'react'
 import useFetchBooks from './FetchingBooks'
-import book from "./Book";
+import Book from "./Book";
 import useFetchCustomers from './FetchCustomers'
+import Customers from './Customers';
 
 function Books() {
   const [ books, setBooks, url ] = useFetchBooks()
@@ -10,15 +11,24 @@ function Books() {
     <div>
       <h3>Books Available</h3>
       <ol>
-        { !books ? "Loading books..." : books.map((book) => {
+        { !books ? "Loading books..." : books.map((books) => {
           return (
             <li key={ Books?.id }>
-              {/* <Book books={books} /> */}
+              <Book books={books} />
             </li>
           )}
         )}
       </ol>
       <h3>Customers who have shopped from us:</h3>
+      <ol>
+        { !customer ? 'Loading customers...' : customer?.map((customer) => {
+          return (
+            <li key={ customer?.id }>
+              <Customers />
+            </li>
+          )
+        })}
+      </ol>
 
     </div>
   )
