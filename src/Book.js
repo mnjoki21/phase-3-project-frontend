@@ -27,7 +27,7 @@ function Book({ books }) {
   return (
       <>
           
-          { `${book?.title} ${book?.author} - ${book?.publisher || book?.genre} ` } <button style={ { cursor: pointer } } onClick=
+          { `${book?.title} ${book?.author} - ${book?.publisher || book?.genre} ` } <button style={ { cursor:"pointer" } } onClick=
           {deleteBook}></button>
       </>
   )

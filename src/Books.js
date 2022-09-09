@@ -1,7 +1,7 @@
 import React from 'react'
-import useFetchBooks from '../FetchingBooks'
-// import book from "book.js";
-import useFetchCustomers from '..FetchCustomers'
+import useFetchBooks from './FetchingBooks'
+import book from "./Book";
+import useFetchCustomers from './FetchCustomers'
 
 function Books() {
   const [ books, setBooks, url ] = useFetchBooks()

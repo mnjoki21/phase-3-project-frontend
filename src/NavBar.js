@@ -1,7 +1,7 @@
 import React from 'react'
 import { NavLink } from 'react-router-dom'
 import { FaBookOpen , FaCartPlus} from 'react-icons/fa';
-import '../Navbar.css'
+import './Navbar.css'
 
 function NavBar() {
   return (
