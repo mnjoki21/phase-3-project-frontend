@@ -15,4 +15,4 @@ function useFetchCustomers() {
     return[customer, setCustomer, url]
 }
 
-export default useFetchCustomers
+export default useFetchCustomers;
