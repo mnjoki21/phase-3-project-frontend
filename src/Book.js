@@ -11,6 +11,7 @@ function Book({ books }) {
             "Content-Type": "application/json",
           },
         })
+
             .then(res => res.json())
             .then(books => console.log(books))
             .catch(err => console.log(err))
@@ -18,14 +19,15 @@ function Book({ books }) {
             .then(res => res.json())
             .then(data => {
                 setBook(books)
-                console.log(books)
-            })
+                console.log(book)
+            },[])
         .catch(err => console.log(err))
         
     
     }
   return (
       <>
+          
           
           { `${book?.title} ${book?.author} - ${book?.publisher || book?.genre} ` } <button style={ { cursor:"pointer" } } onClick=
           {deleteBook}></button>

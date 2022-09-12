@@ -11,13 +11,13 @@ function Customers({ custom }) {
       }
     })
     .then(res => res.json())
-      .then(customer => console.log(customer))
+      .then(data => console.log(data))
       .catch(err => console.log(err))
-    fetch('http://localhost:9292/patients')
+    fetch('http://localhost:9292/customers')
       .then(res => res.json())
       .then(data => {
-        setCustomer(customer)
-        console.log(customer)
+        setCustomer(data)
+        console.log(data)
       })
     .catch(err => console.log(err))
   }

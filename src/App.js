@@ -8,6 +8,7 @@ import Purchases from './Purchases'
 import Books from './Books'
 import './Navbar.css'
 import './Home.css'
+import './About.css'
 
 
 

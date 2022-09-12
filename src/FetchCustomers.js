@@ -1,8 +1,9 @@
 import { useEffect, useState } from "react";
 
+
 function useFetchCustomers() {
     const [ customer, setCustomer ] = useState('')
-    const url = 'http://localhost:9292/customers'
+    const url = "https://books-endpoints.herokuapp.com/customers"
 
     useEffect(() => {
         fetch(url)

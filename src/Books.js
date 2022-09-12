@@ -6,15 +6,16 @@ import Customers from './Customers';
 
 function Books() {
   const [ books, setBooks, url ] = useFetchBooks()
-  const [customer, setCustomer ] = useFetchCustomers()
+  const [ customer, setCustomer ] = useFetchCustomers()
+  console.log(books)
   return (
     <div>
       <h3>Books Available</h3>
       <ol>
-        { !books ? "Loading books..." : books.map((books) => {
+        { !books ? "Loading books..." : books.map((book) => {
           return (
-            <li key={ Books?.id }>
-              <Book books={books} />
+            <li >
+              <Book books={book.title} />
             </li>
           )}
         )}

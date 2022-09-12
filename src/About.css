@@ -1,24 +1,23 @@
-@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300&display=swap');
-
-body {
-    /* background: dodgerblue linear-gradient(45deg, #D3D3D3, #BCC6CC, #98AFC7) fixed; */
-    font-family: 'Poppins', sans-serif;
-    align-items: center;
-    justify-content: center;
-    height: 100vh;
+*{
     margin: 0;
-    background-color: black;
-    color: aliceblue;
+    padding: 0;
 }
 
-.About {
-    background-color: var(--light);
-    border-radius: 20px;
-    box-shadow: 0px 10px 20px var(--corn-flower-blue)0 6px 6px var(--corn-flower-blue);
-    padding: 50px 40px;
-    max-width: 100%;
-    width: 600px;
+.about{
+    /* background-image: url('https: //c0.wallpaperflare.com/preview/416/65/82/the-john-rylands-library-john-rylands-library-libraries.jpg'); */
     text-align: center;
-    margin: auto;
-    font-size: 100px;
+
+}
+.abt{
+    text-align: center;
+    margin-top: 7rem;
+
+}
+
+.rowcon .img img {
+    float: left;
+    width:500px;
+    height: 400px;
+    padding-left: 30px;
+
 }
